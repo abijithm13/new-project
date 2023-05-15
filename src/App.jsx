@@ -1,13 +1,54 @@
-import Banner from "./components/Banner";
-import Header from "./components/header";
 
+import Banner from "./components/Home/Banner"
+import Services from "./components/Home/Services";
+import Header from "./components/Layouts/header";
+import { Outlet, Route, Routes } from "react-router-dom";
+import About from "./components/About/About";
+import { AuthContextProvider } from "./context/context";
+import Login from "./components/Login/Signin";
+import SignUp from "./components/Login/SignUp";
+import Dashboardview from "./components/Dashboard/Dashboardview";
+// import PieComponent from "./components/Dashboard/PieComponent";
+// import Sidebar from "./components/Dashboard/Sidebar";
+// import { PieChart } from "recharts";
+// import Charts from "./components/Dashboard/Charts";
+// import Dashboard from "./components/Dashboard";
+
+
+
+// import {BrowserRouter,Route, Routes} from 'react-router-dom';
 
 function App() {
+
+  
+
   return (
-   <>
-    <Header/>
-    <Banner/>
+    <>
+  <AuthContextProvider>
+  
+   <Routes>
+    <Route path="/" element={<><Header /> <Outlet /></>}>
+      <Route index element={<Banner />}></Route>
+      <Route path="/about" element={<About />}></Route>
+      <Route path="/service" element={<Services />}></Route>
+      <Route path="/login" element={<Login />}></Route>
+      <Route path="/signup" element={<SignUp />}></Route>
+    <Route path="/dashboard" element={<><Dashboardview/></>}></Route>
+
+
+
+
+
+    </Route>
+   </Routes>
+  </AuthContextProvider>
+  
+
+    
+
+   
    </>
+   
   );
 }
 
