@@ -26,7 +26,7 @@ const data = [
 
 const PieComponent = () => {
 return(
-    <div>
+    <div >
          <PieChart width={400} height={400}>
           <Pie
             data={data}

@@ -1,5 +1,4 @@
-
-import Banner from "./components/Home/Banner"
+import Banner from "./components/Home/Banner";
 import Services from "./components/Home/Services";
 import Header from "./components/Layouts/header";
 import { Outlet, Route, Routes } from "react-router-dom";
@@ -8,47 +7,45 @@ import { AuthContextProvider } from "./context/context";
 import Login from "./components/Login/Signin";
 import SignUp from "./components/Login/SignUp";
 import Dashboardview from "./components/Dashboard/Dashboardview";
-// import PieComponent from "./components/Dashboard/PieComponent";
-// import Sidebar from "./components/Dashboard/Sidebar";
-// import { PieChart } from "recharts";
-// import Charts from "./components/Dashboard/Charts";
-// import Dashboard from "./components/Dashboard";
-
-
+import PieComponent from "./components/Dashboard/PieComponent";
+import Sidebar from "./components/Dashboard/Sidebar";
+import Charts from "./components/Dashboard/Charts";
+import Main from "./components/Dashboard/Main";
 
 // import {BrowserRouter,Route, Routes} from 'react-router-dom';
 
 function App() {
-
-  
-
   return (
     <>
-  <AuthContextProvider>
-  
-   <Routes>
-    <Route path="/" element={<><Header /> <Outlet /></>}>
-      <Route index element={<Banner />}></Route>
-      <Route path="/about" element={<About />}></Route>
-      <Route path="/service" element={<Services />}></Route>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/signup" element={<SignUp />}></Route>
-    <Route path="/dashboard" element={<><Dashboardview/></>}></Route>
-
-
-
-
-
-    </Route>
-   </Routes>
-  </AuthContextProvider>
-  
-
-    
-
-   
-   </>
-   
+      <AuthContextProvider>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header /> <Outlet />
+              </>
+            }
+          >
+            <Route index element={<Banner />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/service" element={<Services />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/signup" element={<SignUp />}></Route>
+            <Route
+              path="/dashboard"
+              element={
+                <>
+                  <Dashboardview />
+                 
+                    <Main/>
+                </>
+              }
+            ></Route>
+          </Route>
+        </Routes>
+      </AuthContextProvider>
+    </>
   );
 }
 

@@ -3,25 +3,30 @@ import Footer from "../Layouts/Footer";
 const About = () => {
     return (
       <>
+      
       <main className="about">
         <div className="pg-header">
-          <div className="container">
-            <h1>About</h1>
-          </div>
+       <div className="bg-[#000000] w-full py-[120px]">
+     <div className="max-w-[1240px] my-[20px] mx-auto text-white text-center ">
+     <div className="font-bold text-xl md:text-5xl mt-3 md:p-[24px]">
+                About
+                </div>
+     </div>
+       </div>
         </div>
         <div className="container content">
           <div className="row">
-            <div className="col-lg-4">
-              <h2>Why Choose Us.</h2>
-              <p>Android phones get malware and viruses particularly from app stores. Apple’s App Store has fewer apps to offer than the Android phones’ app store, but the number of available apps is not the most important element of app stores. Apple is very careful with selecting which app developers gain access to the so-called Apple ecosystem – a network of devices, apps and developers. Getting apps that contain malware into the App Store is practically impossible.</p>
+            <div className="col-lg-4 ">
+              <h2 className='text-2xl items-center justify-center'>Why Choose Us? </h2>
+              <p>Are you corporate recruiters still facing difficulties in sourcing skilled IT professionals? Here we pave the way to find the knowledgeable talents for your organizations. Stream solutions, a corporate HR & IT training company providing 360° training services and solutions for various technical and human resource positions like developers, software engineers, business analysts, QA managers, and much more.</p>
             </div>
             <div className="col-lg-4">
-              <h2>The Apple ecosystem.</h2>
-              <p>The devices work seamlessly and effortlessly together. You don’t need to download or install separate applications to link them together, it’s enough when you sign in to the devices with the same Apple ID. Photos, emails, notes and calendars can be shared to all the devices. You also don’t have to pay twice for apps, movies or books – they can be found on all your devices.</p>
+              <h2 className='text-2xl'>Vision:</h2>
+              <p>For a persistent growth in pace with the dynamic world & technologies, thriving to provide the best corporate training solutions.</p>
             </div>
             <div className="col-lg-4">
-              <h2>Ease of use.</h2>
-              <p>Apple phones are known for their ease of use. Their usability comes from simple operating logic: all the apps are launched from the home screen. All the settings, for example, can be found under one menu. And even if you upgrade your iPhone to the newest model, the operating system still works the same way and taking it into use is easy.</p>
+              <h2 className='text-2xl'>Mission:</h2>
+              <p>To strengthen and expand the business landscapes with the upliftment of customer value, mutual trust, and cooperation with our employees and clients enduring a long-term customer relationship.</p>
             </div>
           </div>
           

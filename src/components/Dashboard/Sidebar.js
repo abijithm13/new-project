@@ -62,7 +62,7 @@ const Sidebar = () => {
     <div className='flex items-center justify-between gap-[10px] py-[15px] cursor-pointer'>
         <div className='flex items-center gap-[10px] '>
             <FaRegCalendar color='white'/>
-            <p className='text-[14px] leading-[20px] font-normal text-white'>Table</p>
+            <p className='text-[14px] leading-[20px] font-normal text-white'>Tables</p>
         </div>
         <FaChevronRight color='white'/>
     </div>

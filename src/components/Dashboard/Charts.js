@@ -37,7 +37,7 @@ const data = [
 },
 ];
 
-export default function Charts() {
+export default function App() {
 return (
 	<div style={{ width: "1100px",
 				height: "600px",
@@ -74,5 +74,3 @@ return (
 	</div>
 );
 }
-
-
