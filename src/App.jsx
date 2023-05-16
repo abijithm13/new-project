@@ -11,6 +11,9 @@ import PieComponent from "./components/Dashboard/PieComponent";
 import Sidebar from "./components/Dashboard/Sidebar";
 import Charts from "./components/Dashboard/Charts";
 import Main from "./components/Dashboard/Main";
+// import contact from "./components/contact";
+// import Contact from "./components/contact/Contact";
+import Contact from "./components/contact/Contact";
 
 // import {BrowserRouter,Route, Routes} from 'react-router-dom';
 
@@ -30,6 +33,7 @@ function App() {
             <Route index element={<Banner />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/service" element={<Services />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/signup" element={<SignUp />}></Route>
             <Route
@@ -37,8 +41,7 @@ function App() {
               element={
                 <>
                   <Dashboardview />
-                 
-                    <Main/>
+                  <Main />
                 </>
               }
             ></Route>
