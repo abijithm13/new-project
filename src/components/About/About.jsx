@@ -9,7 +9,7 @@ const About = () => {
        <div className="bg-[#000000] w-full py-[15px]">
      <div className="max-w-[1240px] my-[20px] mx-auto text-red-600 text-center ">
      <div className="font-bold text-xl md:text-5xl mt-3 md:p-[24px]">
-                About
+                About us
                 </div>
      </div>
        </div>
